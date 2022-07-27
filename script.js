@@ -8,13 +8,14 @@ function createShip(length) {
   };
 }
 
-function createGameBoard() {
-  return {
-    fields: [
-      ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
-      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    ],
-  };
-}
+(function createGB() {
+  const gameBoardDiv = document.querySelector(".gameBoard");
+  for (let i = 0; i <= 121; i++) {
+    const field = document.createElement("div");
+    field.classList.add(`field-${i}`);
+    field.style.outline = "1px solid black";
+    gameBoardDiv.appendChild(field);
+  }
+})();
 
-module.exports = { createShip, createGameBoard };
+const gameBoardDiv = document.querySelector(".gameBoard");
