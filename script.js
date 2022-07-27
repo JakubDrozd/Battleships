@@ -1,13 +1,20 @@
 function createShip(length) {
   return {
     length: length,
-    hit(position) {
-      markHit(position);
+    hit(number) {
+      markHit(number);
     },
-    isSunk(length) {},
+    isSunk() {},
   };
 }
 
 function createGameBoard() {
-  return {};
+  return {
+    fields: [
+      ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
+      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    ],
+  };
 }
+
+module.exports = { createShip, createGameBoard };
