@@ -1,7 +1,7 @@
-const createShip = require("./script");
+const functions = require("./script");
 
 test("should create ship object", function () {
-  expect(createShip(4)).toEqual({
+  expect(functions.createShip(4)).toEqual({
     length: 4,
     hit: expect.any(Function),
     isSunk: expect.any(Function),

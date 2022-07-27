@@ -1,0 +1,23 @@
+{
+  "name": "battleships",
+  "version": "1.0.0",
+  "description": "Battleships Project for TOP",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Veanty/Battleships.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Veanty/Battleships/issues"
+  },
+  "homepage": "https://github.com/Veanty/Battleships#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
